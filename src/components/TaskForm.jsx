@@ -18,8 +18,9 @@ function TaskForm(){
             <h1 className="text-2xl font-bold text-center">Crea tu tarea</h1>
         <form className="bg-zinc-400 mb-5 mt-2" onSubmit={guardarTask}>
           <input type="text" className="bg-slate-300 p-3 w-full mb-2" placeholder="Escribi tu tarea" onChange={(e)=> setTitle(e.target.value)} value={title}/> 
-          <input  className="bg-slate-300 p-3 w-full mb-2" type="text" placeholder="Descripcion" onChange={(e)=> setdescription(e.target.value)}  value={description}/> 
+          <input  className="bg-slate-300 p-3 w-full mb-2" type="text" placeholder="Descripcion" onChange={(e)=> setdescription(e.target.value)}  value={description}/> <div className="text-center">
           <button className="bg-green-500 px-2 py-1 rounded-md mb-5 hover:bg-green-400 text-center">Guardar</button>
+          </div>
         </form>
         </div>
     );
